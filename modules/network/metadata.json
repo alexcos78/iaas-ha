@@ -1,0 +1,15 @@
+{
+  "name": "adrien-network",
+  "version": "0.4.2",
+  "author": "Adrien Thebo <adrien@somethingsinistral.net>",
+  "summary": "Manage non-volatile network configuration",
+  "license": "Apache 2.0",
+  "source": "https://github.com/adrienthebo/puppet-network",
+  "project_page": "https://github.com/adrienthebo/puppet-network",
+  "issues_url": "https://github.com/adrienthebo/puppet-network/issues",
+  "description": "Manage persistent network interface configuration",
+  "dependencies": [
+    {"name":"adrien/filemapper","version_requirement":">= 1.0.0"},
+    {"name":"adrien/boolean","version_requirement":">= 1.0.0"}
+  ]
+}

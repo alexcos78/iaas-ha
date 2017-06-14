@@ -1,0 +1,15 @@
+#!/bin/sh
+<% if @keystone_admin_token -%>
+export OS_SERVICE_TOKEN='<%= @keystone_admin_token.gsub(/'/){ %q(\') } %>'
+export OS_SERVICE_ENDPOINT='http://<%= @controller_node %>:35357/v2.0/'
+<% end -%>
+#Mitaka
+export OS_NO_CACHE='<%= @use_no_cache %>'
+export OS_PROJECT_DOMAIN_ID='<%= @project_domain %>'
+export OS_USER_DOMAIN_ID='<%= @user_domain %>'
+export OS_PROJECT_NAME='<%= @admin_project %>'
+export OS_USERNAME='<%= @admin_user %>'
+export OS_PASSWORD='<%= @admin_password.gsub(/'/){ %q(\') } %>'
+export OS_AUTH_URL='http://<%= @controller_node %>:35357/v3'
+export OS_IDENTITY_API_VERSION=3
+export OS_IMAGE_API_VERSION=2

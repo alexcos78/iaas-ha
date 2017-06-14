@@ -1,0 +1,38 @@
+{
+  "name": "camptocamp-kmod",
+  "version": "1.0.5",
+  "author": "camptocamp",
+  "summary": "Manage Linux kernel modules with Puppet",
+  "license": "Apache-2.0",
+  "source": "https://github.com/camptocamp/puppet-kmod",
+  "project_page": "https://github.com/camptocamp/puppet-kmod",
+  "issues_url": "https://github.com/camptocamp/puppet-kmod/issues",
+  "description": "Manage Linux kernel modules with Puppet",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
